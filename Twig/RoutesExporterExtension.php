@@ -43,7 +43,7 @@ class RoutesExporterExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('export_routes', 'exportRoutesFunction'),
+            new \Twig_SimpleFunction('export_routes', [$this, 'exportRoutesFunction']),
         ];
     }
 

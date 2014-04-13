@@ -1,9 +1,0 @@
-betsol.routes_export.routes_exporter:
-    class: Betsol\RoutesExportBundle\Routing\RoutesExporter
-    arguments: [@router]
-
-betsol.routes_export.routes_exporter:
-    class: Betsol\RoutesExportBundle\Twig\RoutesExporterExtension
-    arguments: [@betsol.routes_export.routes_exporter]
-    tags:
-        - { name: twig.extension }

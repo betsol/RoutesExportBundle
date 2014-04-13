@@ -1,6 +1,6 @@
 {
     "name": "betsol/routes-export-bundle",
-    "description": "Allows you to export routes from Symfony 2.",
+    "description": "Allows you to export routes from Symfony2",
     "keywords": ["symfony"],
     "license": "MIT",
     "authors": [
@@ -10,7 +10,11 @@
         }
     ],
     "require": {
-        "php": "~5.4.0",
+        "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.4"
-    }
+    },
+    "autoload": {
+        "psr-0": { "Betsol\\RoutesExportBundle": "" }
+    },
+    "target-dir": "Betsol/RoutesExportBundle"
 }
