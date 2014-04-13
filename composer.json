@@ -1,0 +1,16 @@
+{
+    "name": "betsol/routes-export-bundle",
+    "description": "Allows you to export routes from Symfony 2.",
+    "keywords": ["symfony"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Slava Fomin II",
+            "email": "s.fomin@betsol.ru"
+        }
+    ],
+    "require": {
+        "php": "~5.4.0",
+        "symfony/framework-bundle": "~2.4"
+    }
+}
