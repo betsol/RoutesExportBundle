@@ -27,6 +27,7 @@ class RoutesExporterExtension extends \Twig_Extension
      */
     public function __construct(RoutesExporter $routesExporter)
     {
+        $this->routesExporter = $routesExporter;
     }
 
     /**
@@ -48,15 +49,11 @@ class RoutesExporterExtension extends \Twig_Extension
     }
 
     /**
+     * @param string $presetName
      * @return array
      */
-    public function exportRoutesFunction()
+    public function exportRoutesFunction($presetName = 'default')
     {
-        return [
-            [
-                'name' => 'hello.world',
-                'path' => '/hello/{world}'
-            ]
-        ];
+        return $this->routesExporter->getRoutes($presetName);
     }
 }
